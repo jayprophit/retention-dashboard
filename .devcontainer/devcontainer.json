@@ -1,0 +1,16 @@
+{
+    "name": "Retention Dashboard Dev Container",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode"
+        ]
+      }
+    },
+    "forwardPorts": [3000],
+    "postCreateCommand": "npm install"
+  }
