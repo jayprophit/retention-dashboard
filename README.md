@@ -21,24 +21,16 @@ git clone https://github.com/yourusername/retention-dashboard.git
 cd retention-dashboard
 npm install
 npm start
+```
 
+```jsx
+import React from 'react';
 import RetentionDashboard from './RetentionDashboard';
 
 function App() {
   const retentionData = [
-    {cohort: "Jan", month6: 59.4, totalUsers: 2854},
-    {cohort: "Feb", month6: 55.7, totalUsers: 2960}
-  ];
-
-  return (
-    <RetentionDashboard 
-      data={retentionData
-      import RetentionDashboard from './RetentionDashboard';
-
-function App() {
-  const retentionData = [
-    {cohort: "Jan", month6: 59.4, totalUsers: 2854},
-    {cohort: "Feb", month6: 55.7, totalUsers: 2960}
+    { cohort: "Jan", month6: 59.4, totalUsers: 2854 },
+    { cohort: "Feb", month6: 55.7, totalUsers: 2960 }
   ];
 
   return (
@@ -48,4 +40,7 @@ function App() {
     />
   );
 }
+
+export default App;
+```
 
